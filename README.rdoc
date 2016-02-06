@@ -1,6 +1,6 @@
 == README
 
-**Guess It!**
+= Guess It!
 
 A game where you need to guess the capital of a country.
 
