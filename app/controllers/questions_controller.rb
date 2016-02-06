@@ -3,7 +3,7 @@ class QuestionsController < ApplicationController
   end
 
   def show
-    @question = Question.first(params[:title])
+    @question = Question.first
   end
 
 
