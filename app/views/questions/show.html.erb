@@ -1,10 +1,31 @@
-<h1>Questions 1</h1>
-<h2><%= @question.title %></h2>
+<div class="container">
 <%= form_for(@answer) do |f| %>
-  <%= radio_button_tag(:selected_answer, 1, checked = false) %> <%= @answer.question.option1 %><br>
-  <%= radio_button_tag(:selected_answer, 2, checked = false) %> <%= @answer.question.option2 %><br>
-  <%= radio_button_tag(:selected_answer, 3, checked = false) %> <%= @answer.question.option3 %><br>
-  <%= radio_button_tag(:selected_answer, 4, checked = false) %> <%= @answer.question.option4 %><br>
-  <%= f.hidden_field :question_id %>
-  <%= f.submit "Answer" %>
+
+<div class="jumbotron ">
+  <h1><%= @question.title %></h1>
+<div class="form-group">
+  <div class="radio">
+    <%= radio_button_tag(:selected_answer, 1, checked = false) %><%= @answer.question.option1 %>
+  </div>
+</div>
+<div class="form-group">
+<div class="radio">
+  <%= radio_button_tag(:selected_answer, 2, checked = false) %> <%= @answer.question.option2 %>
+  </div>
+</div>
+<div class="form-group">
+<div class="radio">
+    <%= radio_button_tag(:selected_answer, 3, checked = false) %> <%= @answer.question.option3 %>
+  </div>
+</div>
+<div class="form-group">
+<div class="radio">
+    <%= radio_button_tag(:selected_answer, 4, checked = false) %> <%= @answer.question.option4 %>
+  </div>
+</div>
+    <%= f.hidden_field :question_id %>
+  <p><%= f.submit "Answer", :class => "btn btn-lg btn-success" %></p>
+</div>
+
 <% end %>
+</div>
