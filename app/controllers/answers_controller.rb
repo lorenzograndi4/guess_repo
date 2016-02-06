@@ -17,5 +17,7 @@ class AnswersController < ApplicationController
   end
 
   def score
+    @score = Answer.sum(:score)
+    Answer.delete_all
   end
 end
