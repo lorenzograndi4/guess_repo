@@ -1,9 +1,8 @@
 Rails.application.routes.draw do
-  get 'scores/scores'
-  resources :scores
 
   root 'questions#index'
   resources :questions
+  resources :answers
 
   #get 'welcome/index'
 

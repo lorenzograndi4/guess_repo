@@ -1,10 +1,7 @@
 <h1>Questions 1</h1>
-<h2><%= @question.title %></h2>
-  <%= form_for(@answer) do |f|   %>
-  <%= radio_button_tag(:q1, 1, checked = false) %> <%= @answer.option1 %><br>
-  <%= radio_button_tag(:q1, 2, checked = false) %> <%= @answer.option2 %><br>
-  <%= radio_button_tag(:q1, 3, checked = false) %> <%= @answer.option3 %><br>
-  <%= radio_button_tag(:q1, 4, checked = false) %> <%= @answer.option4 %><br>
-  <hidden for="question_id" />
-  <%= f.submit "Answer" %>
-<% end %>
+
+<ul>
+  <% @questions.each do |q| %>
+  <li><%= link_to q.title, q %></li>
+  <% end %>
+</ul>
