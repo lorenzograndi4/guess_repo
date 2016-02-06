@@ -2,7 +2,11 @@ Rails.application.routes.draw do
 
   root 'questions#index'
   resources :questions
-  resources :answers
+  resources :answers do
+    collection do
+      get :score
+    end
+  end
 
   #get 'welcome/index'
 

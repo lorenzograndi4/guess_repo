@@ -1,10 +1,10 @@
 <h1>Questions 1</h1>
 <h2><%= @question.title %></h2>
-  <%= form_for(@answer) do |f|   %>
-  <%= radio_button_tag(:answer, 1, checked = false) %> <%= @answer.question.option1 %><br>
-  <%= radio_button_tag(:answer, 2, checked = false) %> <%= @answer.question.option2 %><br>
-  <%= radio_button_tag(:answer, 3, checked = false) %> <%= @answer.question.option3 %><br>
-  <%= radio_button_tag(:answer, 4, checked = false) %> <%= @answer.question.option4 %><br>
+<%= form_for(@answer) do |f| %>
+  <%= radio_button_tag(:selected_answer, 1, checked = false) %> <%= @answer.question.option1 %><br>
+  <%= radio_button_tag(:selected_answer, 2, checked = false) %> <%= @answer.question.option2 %><br>
+  <%= radio_button_tag(:selected_answer, 3, checked = false) %> <%= @answer.question.option3 %><br>
+  <%= radio_button_tag(:selected_answer, 4, checked = false) %> <%= @answer.question.option4 %><br>
   <%= f.hidden_field :question_id %>
   <%= f.submit "Answer" %>
 <% end %>
