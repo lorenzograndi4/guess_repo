@@ -44,7 +44,12 @@
    margin-bottom: 0;
    line-height: 40px;
  }
-
+.jumbotron{
+  background-color: #03A9F4;
+}
+.score .jumbotron{
+  background-color: #FFEB3B;
+}
  /* Custom page footer */
  .footer {
    padding-top: 19px;

@@ -1,3 +1,28 @@
-<h1> Your score </h1>
-<p> <%= @score %> </p>
-<%= link_to "Home", root_path %>
+
+<p>  </p>
+
+<div class="container score">
+      <!-- <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="#">Home</a></li>
+            <li role="presentation"><a href="#">About</a></li>
+            <li role="presentation"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">Project name</h3>
+      </div> -->
+
+      <div class="jumbotron">
+        <h1>Your Score: <%= @score %></h1>
+        <p class="lead">Great job!</p>
+        <p class="lead">Keep practicing.</p>
+        <p><img src="https://media.giphy.com/media/124if4JhjDwGHu/giphy.gif"/></p>
+        <p><%= link_to "Go Again", root_path, :class => "btn btn-lg btn-info" %></p>
+      </div>
+
+      <footer class="footer test">
+        <p>© 2016 Guess It!, Inc.</p>
+      </footer>
+
+    </div>
