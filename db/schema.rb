@@ -36,11 +36,5 @@ ActiveRecord::Schema.define(version: 20160206112700) do
     t.integer  "correct"
   end
 
-  create_table "scores", force: :cascade do |t|
-    t.text     "answer"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   add_foreign_key "answers", "questions"
 end

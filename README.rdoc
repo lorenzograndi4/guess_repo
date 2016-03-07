@@ -1,3 +1,14 @@
 = Guess It!
+== Winning Hackathon project.
 
-A game where you need to guess the capital of a country.
+A game where you need to guess a country's capital.
+
+=== Team
+[Lorenzo Grandi](https://github.com/lorenzograndi4)
+[Maurice Smorenberg](https://github.com/MCSmorenberg)
+[Erik Roos](https://github.com/rooserik)
+Iris Bune
+
+=== Info
+After our first week at [Codaisseur's](https://github.com/Codaisseur) Beginner Web Dev Bootcamp
+In a team of 4, we made this simple guessing game.
